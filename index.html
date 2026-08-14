@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun Football</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>⚽ SUN FOOTBALL</h1>
+    <div id="menu">
+        <h1>⚽ SUN FOOTBALL</h1>
+        <button id="playButton">JOUER</button>
+    </div>
 
-    <p>Mon premier jeu de football</p>
+    <div id="game" class="hidden">
 
-    <button>JOUER</button>
+        <div id="score">
+            SUN FC <strong>0 - 0</strong> RIVAL FC
+        </div>
+
+        <canvas id="field" width="1000" height="600"></canvas>
+
+        <div id="controls">
+            🕹️ Déplacement : WASD / Flèches
+            &nbsp; | &nbsp;
+            ⚽ Tir : ESPACE
+        </div>
+
+        <button id="backButton">MENU</button>
+
+    </div>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
